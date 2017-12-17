@@ -27,7 +27,9 @@ MAINTAINER Justin Garrison <justin@linux.com>
 
 RUN apt-get update \
     && apt-get install -y \
-    libssl-dev libconfuse1 \
+    ca-certificates \
+    libssl-dev \
+    libconfuse1 \
     && rm -rf /var/lib/apt/lists/*
 
 COPY --from=build /inadyn/src/inadyn /usr/local/bin/

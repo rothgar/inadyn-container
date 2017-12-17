@@ -27,5 +27,5 @@ provider google {
 Then run the container with
 
 ```
-docker run -d -v $PWD:/srv rothgar/inadyn:2.2 /usr/local/bin/inadyn --foreground --config=/srv/inadyn.conf
+docker run -d -v $PWD:/srv rothgar/inadyn:v2.2 /usr/local/bin/inadyn --foreground --config=/srv/inadyn.conf
 ```
